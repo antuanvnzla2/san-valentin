@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Feliz San Valentín ❤️</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -30,24 +30,16 @@
             </p>
         </div>
 
-        <!-- Botón para mostrar mensaje oculto -->
-        <button id="loveButton">Haz clic aquí 💌</button>
+        <button onclick="showLove()">Haz clic aquí 💌</button>
         <p id="hiddenMessage">Te amo más de lo que las palabras pueden explicar 💖</p>
 
-        <!-- Botón para ir a la música -->
         <button onclick="location.href='./html/musica.html'">Ir a la música 🎵</button>
-
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const button = document.getElementById('loveButton');
-            const hiddenMessage = document.getElementById('hiddenMessage');
-
-            button.addEventListener('click', () => {
-                hiddenMessage.classList.add('show');
-            });
-        });
+        function showLove() {
+            document.getElementById("hiddenMessage").style.opacity = 1;
+        }
     </script>
 
 </body>
