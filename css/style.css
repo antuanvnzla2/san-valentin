@@ -1,0 +1,83 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Tarjeta principal */
+.card {
+    background: white;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #c0392b;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Carta */
+.letter p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Firma */
+.signature {
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Botones */
+button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Mensaje oculto */
+#hiddenMessage {
+    opacity: 0;               /* empieza oculto */
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Mostrar mensaje al agregar clase 'show' */
+#hiddenMessage.show {
+    opacity: 1;
+    transform: translateY(0);
+}

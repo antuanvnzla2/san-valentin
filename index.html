@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Feliz San Valentín ❤️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Para ti, mi amor ❤️</h1>
+        <p class="subtitle">Feliz San Valentín</p>
+
+        <div class="letter">
+            <p>
+                Desde que llegaste a mi vida, todo tiene más sentido.  
+                No eres solo parte de mis días, eres mi lugar seguro,  
+                mi sonrisa fácil y mi pensamiento favorito.
+            </p>
+
+            <p>
+                Esta página no puede contener todo lo que siento por ti,  
+                pero sí una parte sincera de mi corazón.
+            </p>
+
+            <p class="signature">
+                Con todo mi amor,<br>
+                <strong>Antuan</strong>
+            </p>
+        </div>
+
+        <!-- Botón para mostrar mensaje oculto -->
+        <button id="loveButton">Haz clic aquí 💌</button>
+        <p id="hiddenMessage">Te amo más de lo que las palabras pueden explicar 💖</p>
+
+        <!-- Botón para ir a la música -->
+        <button onclick="location.href='html/musica.html'">Ir a la música 🎵</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('loveButton');
+            const hiddenMessage = document.getElementById('hiddenMessage');
+
+            button.addEventListener('click', () => {
+                hiddenMessage.classList.add('show');
+            });
+        });
+    </script>
+
+</body>
+</html>
